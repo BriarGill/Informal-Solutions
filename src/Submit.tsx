@@ -62,7 +62,7 @@ export default function Submit() {
         <form
           name="submissions"
           method="POST"
-          action="/thank-you"
+          action="/thank-you.html"
           data-netlify="true"
           encType="multipart/form-data"
           style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}
