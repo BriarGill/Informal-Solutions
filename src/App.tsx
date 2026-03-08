@@ -83,13 +83,10 @@ export default function App() {
 
   return (
     <div style={{ width: '100vw', height: '100vh' }}>
-
       <ThiingsGrid gridSize={260} renderItem={PhotoCell} />
-
       {selectedPhoto && (
         <Lightbox src={selectedPhoto} onClose={() => setSelectedPhoto(null)} />
       )}
-
       <div style={{
         position: 'fixed',
         top: '20px',
@@ -99,7 +96,6 @@ export default function App() {
         flexDirection: 'column',
         gap: '12px',
       }}>
-
         <div style={{
           background: 'rgba(200, 200, 200, 0.85)',
           borderRadius: '999px',
@@ -110,7 +106,6 @@ export default function App() {
         }}>
           Informal Solutions
         </div>
-
         <div style={{ display: 'flex', gap: '10px' }}>
           <a href="/about" style={{
             background: 'rgba(200, 200, 200, 0.85)',
@@ -121,7 +116,6 @@ export default function App() {
             color: '#111',
             textDecoration: 'none',
           }}>About</a>
-
           <a href="https://www.instagram.com/informal_solutions/" target="_blank" rel="noreferrer" style={{
             background: 'rgba(200, 200, 200, 0.85)',
             borderRadius: '999px',
@@ -131,8 +125,7 @@ export default function App() {
             color: '#111',
             textDecoration: 'none',
           }}>Instagram</a>
-
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOAEhkXlN1yDpne7_koDKBQu-Ar2d5TGDaFsAbRhgVo9W5WQ/viewform" target="_blank" rel="noreferrer" style={{
+          <a href="/submit" style={{
             background: 'rgba(200, 200, 200, 0.85)',
             borderRadius: '999px',
             padding: '8px 18px',
@@ -142,7 +135,6 @@ export default function App() {
             textDecoration: 'none',
           }}>Submit</a>
         </div>
-
       </div>
     </div>
   );
