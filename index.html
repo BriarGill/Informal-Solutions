@@ -7,8 +7,7 @@
     <title>Informal Solutions</title>
   </head>
   <body>
-    <!-- Hidden form so Netlify can detect it at build time -->
-    <form name="submissions" netlify netlify-honeypot="bot-field" enctype="multipart/form-data" hidden>
+    <form name="submissions" netlify netlify-honeypot="bot-field" enctype="multipart/form-data" action="/thank-you.html" hidden>
       <input type="hidden" name="form-name" value="submissions" />
       <input name="bot-field" />
       <input type="text" name="name" />
