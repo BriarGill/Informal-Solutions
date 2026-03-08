@@ -1,21 +1,16 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Informal Solutions</title>
-  </head>
-  <body>
-    <form name="submissions" netlify netlify-honeypot="bot-field" enctype="multipart/form-data" action="/thank-you.html" hidden>
-      <input type="hidden" name="form-name" value="submissions" />
-      <input name="bot-field" />
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="description"></textarea>
-      <input type="file" name="photo" />
-    </form>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+:root {
+  font-family: monospace;
+  background-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
