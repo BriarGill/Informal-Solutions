@@ -7,6 +7,15 @@
     <title>Informal Solutions</title>
   </head>
   <body>
+    <!-- Hidden form so Netlify can detect it at build time -->
+    <form name="submissions" netlify netlify-honeypot="bot-field" enctype="multipart/form-data" hidden>
+      <input type="hidden" name="form-name" value="submissions" />
+      <input name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="description"></textarea>
+      <input type="file" name="photo" />
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
